@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#000000]">
+    <div class="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1">
+      <div>
+        <div class="justify-center item-center p-28 pb-0">
+          <h1
+            class="flex justify-center item-center font-bold text-2xl text-green-500 underline-offset-1 underline "
+          >
+            Oasis InfoByte
+          </h1>
+          
+          <p
+            class="flex justify-center font-bold text-xl text-green-500"
+          >
+            Level-2
+          </p>
+          
+          <p
+            class="flex justify-center font-bold text-xl text-green-500"
+          >
+            Task-1
+          </p>
+
+          <br>
+
+          <h1 class=" flex justify-center item-center text-white font-bold text-xl">Stack used: </h1>
+            <ul class="justify-center item-center font-bold text-white lg:ml-8">
+                <li>HTML</li>
+                <li>Tailwind CSS</li>
+                <li>Javascript</li>
+                
+                <br>
+
+                <li> - <span style="color:red">C</span> button will clear out the data ✔</span></li>
+                <li> - It can compute long expressions ✔</li>
+                <li class="text-red-400"> - No input of characters ✖</li>
+                <li> - Continuation possible ✔</li>
+            </ul>
+
+        </div>
+
+        
+      </div>
+
+      <div>
+        <div class="p-12 pl-0 ml-0" class="">
+          <h1
+            class="flex justify-center item-center pb-8 font-bold text-3xl text-green-500"
+          >
+            Calculator
+          </h1>
+
+          <div class="">
+            <div class="">
+              <div class="flex justify-center item-center">
+                <input class="block w-7/12 bg-white font-bold text-green-500 text-xl p-4 border-2 rounded-full py-3" id="txt" type="text">
+              </div>
+            </div>
+
+            <div class="flex justify-center item-center">
+              <div
+                class="grid grid-row-4 md:grid-row-4 lg:grid-row-4 p-4 m-4 border-2 rounded-xl bg-[#282A3A]"
+              >
+                <div class="lg:p-2">
+                  <button
+                    class="border-2 font-bold text-white rounded-xl p-3 lg:px-5 md:px-2 sm:px-2 m-2 hover:bg-[#C69749]"
+                    id="b7"
+                  >
+                    7
+                  </button>
+                  <button
+                    class="border-2 font-bold text-white rounded-xl p-3 lg:px-5 md:px-2 sm:px-2 m-2 hover:bg-[#C69749]"
+                    id="b8"
+                  >
+                    8
+                  </button>
+                  <button
+                    class="border-2 font-bold text-white rounded-xl p-3 lg:px-5 md:px-2 sm:px-2 m-2 hover:bg-[#C69749]"
+                    id="b9"
+                  >
+                    9
+                  </button>
+                  <button
+                    class="border-2 font-bold rounded-xl text-green-500 p-3 lg:px-5 md:px-2 sm:px-2 m-2 hover:bg-[#EEEEEE]"
+                    id="b/"
+                  >
+                    /
+                  </button>
+                </div>
+
+                <div class="lg:p-2">
+                  <button
+                    class="border-2 font-bold text-white rounded-xl p-3 lg:px-5 md:px-2 sm:px-2 m-2 hover:bg-[#C69749]"
+                    id="b4"
+                  >
+                    4
+                  </button>
+                  <button
+                    class="border-2 font-bold text-white rounded-xl p-3 lg:px-5 md:px-2 sm:px-2 m-2 hover:bg-[#C69749]"
+                    id="b5"
+                  >
+                    5
+                  </button>
+                  <button
+                    class="border-2 font-bold text-white rounded-xl p-3 lg:px-5 md:px-2 sm:px-2 m-2 hover:bg-[#C69749]"
+                    id="b6"
+                  >
+                    6
+                  </button>
+                  <button
+                    class="border-2 font-bold rounded-xl text-green-500 p-3 lg:px-5 md:px-2 sm:px-2 m-2 hover:bg-[#EEEEEE]"
+                    id="bx"
+                  >
+                    x
+                  </button>
+                </div>
+
+                <div class="lg:p-2">
+                  <button
+                    class="border-2 font-bold rounded-xl text-white p-3 lg:px-5 md:px-2 sm:px-2 m-2 hover:bg-[#C69749]"
+                    id="b1"
+                  >
+                    1
+                  </button>
+                  <button
+                    class="border-2 font-bold rounded-xl text-white p-3 m-2 lg:px-5 md:px-2 sm:px-2 hover:bg-[#C69749]"
+                    id="b2"
+                  >
+                    2
+                  </button>
+                  <button
+                    class="border-2 font-bold rounded-xl text-white p-3 lg:px-5 md:px-2 sm:px-2 m-2 hover:bg-[#C69749]"
+                    id="b3"
+                  >
+                    3
+                  </button>
+                  <button
+                    class="border-2 font-bold rounded-xl text-green-500 p-3 lg:px-5 md:px-2 sm:px-2 m-2 hover:bg-[#EEEEEE]"
+                    id="b-"
+                  >
+                    -
+                  </button>
+                </div>
+
+                <div class="lg:p-2">
+                  <button
+                    class="border-2 font-bold rounded-xl text-red-700 p-3 lg:px-5 md:px-2 sm:px-2 m-2 hover:bg-red-700 hover:text-white"
+                    id="bC"
+                  >
+                    C
+                  </button>
+                  <button
+                    class="border-2 font-bold text-white rounded-xl p-3 lg:px-5 md:px-2 sm:px-2 m-2 hover:bg-[#C69749]"
+                    id="b0"
+                  >
+                    0
+                  </button>
+                  <button
+                    class="border-2 font-bold rounded-xl text-green-500 lg:px-5 md:px-2 sm:px-2 p-3 m-2 hover:bg-[#EEEEEE]"
+                    id="b+"
+                  >
+                    +
+                  </button>
+                  <button
+                    class="border-2 font-bold rounded-xl text-red-800 lg:px-5 md:px-2 sm:px-2 p-3 lg:m-2 hover:bg-[#4E9F3D]"
+                    id="b="
+                  >
+                    =
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
